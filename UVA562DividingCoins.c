@@ -4,12 +4,8 @@
 //
 //  Created by Md Rubayet Hassan on 27/5/20.
 //  Copyright © 2020 Md Rubayet Hassan. All rights reserved.
-//
-
-// Program to calculate the sum of n numbers entered by the user
 
 #include <stdio.h>
-#include <stdlib.h>
 
 #define SIZE_M 101
 #define SIZE_SUM 50001
@@ -71,10 +67,12 @@ int main(){
     int numberOfCase;
     scanf("%d",&numberOfCase);
     while(numberOfCase--){
+        totalValue=0;
+        numberOfCoin=0;
+        ans=0;
         readCase();
         solveCase();
         printCase();
     }
     return 0;
 }
-
